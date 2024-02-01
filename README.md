@@ -1,6 +1,6 @@
 **Game Implementation:**
 
-Welcome to an exciting two-player game experience coded in C++. Here, players take turns selecting a number between 1 and 6, challenging the hidden number chosen by the computer. If a player successfully guesses the computer's hidden number, the game concludes, revealing the player's total score. Scores accumulate with each correct guess, creating a friendly and engaging competition.
+Welcome to an exciting two-player game experience coded in C++. Here, players take turns selecting a number between 1 and 6, challenging the hidden number chosen by the computer. If a player number is same to  the computer's hidden number, the game concludes, revealing the player's total score .it creates a friendly and engaging competition.
 
 If a player happens to choose a number outside the valid range (1 to 6), the program prompts them to try again, ensuring a seamless and enjoyable gaming experience. After a set number of turns, the final scores of both players are compared, and the player with the higher score emerges as the ultimate victor. The program employs a basic loop structure, conditional statements, and user input validation to manage the game flow, calculate scores, and determine the winner.
 
