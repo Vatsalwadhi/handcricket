@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+int main()
+{
+    srand(static_cast<unsigned int>(time(nullptr)));
+    int score = 0;
+    int input = 1;
+    int x = 0;
+    while (true)
+    {
+        int N = 6;
+    the:
+        x = (rand() % N) + 1;
+        cout << "ENTER A NUMBER  1-6 : ";
+        cin >> input;
+        if (input > 6 || input < 1)
+        {
+            cout << "WRONG INPUT\n----------------\nTRY AGAIN \n";
+            goto the;
+        }
+        cout << "COMPUTER CHOiCE WAS  :" << x << endl; 
+        if (input == x)
+        {
+            printf("GAME OVER \n");
+            cout << "REEVALUATING... YOUR SCORE IS :" << score << endl;
+            break;
+        }
+        score = input + score;
+        cout << "YOUR CURRENT SCORE IS " << score << endl;
+        cout << "\n";
+    }
+    return 0;
+}
